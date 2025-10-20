@@ -19,10 +19,13 @@ ENV/
 *.data
 
 # Model artifacts
+# Ignore all joblib, pickle, h5, and sav files
 *.joblib
 *.pkl
 *.h5
 *.sav
+# But keep the deployed model file
+!MLModel/got_survival_lr_model.joblib
 
 # Logs and outputs
 *.log
